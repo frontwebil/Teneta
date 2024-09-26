@@ -1,0 +1,98 @@
+.header {
+  background-color: #1e1e1e;
+}
+.header-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 20px;
+  align-items: center;
+}
+.header-logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header-logo-img {
+  width: 70px;
+  height: 70px;
+}
+.header-logo-title {
+  color: #fff;
+  text-align: center;
+  font-family: Genos;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.header-nav {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.header-nav-text {
+  color: #FFF;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.header-nav-text:hover{
+  color: #5133cd;
+}
+
+
+.buy-button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background: #2F00E2;
+  padding: 8px 34px;
+}
+
+.header-container.burger{
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-250%);
+  transition: transform 500ms;
+  box-sizing: border-box;
+  height: 100%;
+  background: #141414;
+  z-index: 3;
+}
+
+.menu.active {
+  overflow-y: scroll;
+  opacity: 1;
+  transition: transform 400ms;
+  transform: translateY(0%);
+}
+
+.container-menu {
+  max-width: 1500px;
+  margin: 0 auto;
+  /* text-align: center; */
+}

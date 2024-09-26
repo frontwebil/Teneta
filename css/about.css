@@ -1,0 +1,31 @@
+.about {
+  padding: 0 10px;
+  max-width: 1210px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-width: 165px;
+}
+.about-card-img {
+  width: 80px;
+  height: 80px;
+}
+.about-card-text {
+  max-width: 165px;
+  text-align: center;
+  color: #fff;
+  font-family: "Days One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

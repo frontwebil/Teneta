@@ -1,0 +1,30 @@
+.video-content {
+  max-width: 100%;
+  position: relative;
+}
+.video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.order-button.button-absolute {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.order-button {
+  color: #fff;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background: #2f00e2;
+  padding: 10px 35px;
+}

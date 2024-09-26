@@ -1,0 +1,76 @@
+/* .detector {
+} */
+.detector-container {
+  max-width: 1490px;
+  margin: 0 auto 60px;
+  padding: 0 10px;
+}
+.detector-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.detector-content-left {
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.detector-content-left-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.detector-content-right {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  max-width: 540px;
+}
+.detector-content-right-title {
+  color: #FFF;
+font-family: Involve;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.detector-content-right-gerc {
+  margin-top: 50px;
+  max-width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.detector-content-right-gerc-block {
+  color: #FFF;
+text-align: center;
+font-family: "Days One";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+border-radius: 40px;
+border: 2px solid #FFF;
+padding: 14px 28px;
+min-width: 160px;
+}
+.detector-content-right-gerc-block-last {
+  display: flex;
+  gap: 18px;
+  align-items: center ;
+}
+.detector-content-right-gerc-text {
+  color: #FFF;
+font-family: Involve;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

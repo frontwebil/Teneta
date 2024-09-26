@@ -1,0 +1,39 @@
+@import url(css/header.css);
+@import url(css/reset.css);
+@import url(css/media.css);
+@import url(css/video-info.css);
+@import url(css/about.css);
+@import url(css/advantages.css);
+@import url(css/frequency.css);
+@import url(css/detector.css);
+@import url(css/purpose.css);
+@import url(css/how-work.css);
+
+html{
+  background-color: #02050F;
+}
+
+@font-face {
+  font-family: 'Days One';
+  src: url('fonts/DaysOne-Regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'involve';
+  src: url('fonts/involve-regular.ttf') format('truetype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+

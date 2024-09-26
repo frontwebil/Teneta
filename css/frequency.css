@@ -1,0 +1,22 @@
+.frequency {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-image: url(/images/freq-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+
+.frequency-img-first {
+  display: block;
+  margin: 0 auto;
+}
+.frequency-img-second {
+  display: none;
+  margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+.advantages {
+  max-width: 1500px;
+  margin: 0 auto 80px;
+  text-align: center  ;
+}
+
+.advantages-cards {
+  margin-top: 90px;
+  margin-bottom: 75px;
+  display: flex;
+  gap: 20px;
+  padding: 0 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantages-card {
+  padding: 30px 50px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background: #262626;
+  box-shadow: 4px 4px 16px 0px #000;
+}
+.advantages-card-title {
+  color: #79b3ff;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.advantages-card-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
