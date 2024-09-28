@@ -1,0 +1,101 @@
+.characteristics {
+  background-image: url(/images/characteristics-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.characteristics-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.characteristics-img{
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+.characteristics-content {
+  display: flex;
+  flex-direction: column;
+}
+.characteristics-content-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.characteristics-content-cards {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  z-index: 3;
+  flex-wrap: wrap;
+
+}
+.characteristics-content-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.characteristics-content-column.gap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.characteristics-content-card {
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: rgba(2, 5, 15, 0.7);
+  padding: 30px 20px 10px;
+}
+.characteristics-content-card-title {
+  color: #fff;
+  font-family: Involve;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.characteristics-content-card-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+
+.under-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 775px;
+  margin-top: 50px;
+  gap: 10px;
+}
+.characteristics-line {
+  background: #FFF;
+  height: 2px;
+  width: 30%;
+  margin-left: 10px;
+}

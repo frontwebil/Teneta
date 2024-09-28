@@ -71,7 +71,17 @@
 
   <div class="video-content">
     <video src="video/main-video.mp4" autoplay muted loop class="video"></video>
-    <a href="" class="order-button button-absolute">Замовити</a>
+    <video src="video/test.mp4" autoplay muted loop class="video-mobile"></video>
+    <div  class="button-absolute">
+      <h2 class="video-button-title">Для швидкого замовлення
+        залиште свій номер телефону</h2>
+        <form class="input-flex">
+          <input type="text" class="input-video telephone" value="+380">
+          <button>
+            <img src="images/send.png" alt="" class="send-video">
+          </button>
+        </а>
+    </div>
   </div>
 
   <div class="about">
@@ -245,10 +255,10 @@
   <div class="how-work">
     <h3 class="title">Як Працює - відеоогляд</h3>
     <div class="how-work-video-container">
-      <video class="how-work-video"  src="video/asdasd.mp4"></video>
+      <video class="how-work-video" src="video/asdasd.mp4"></video>
     </div>
 
-    <div class="purpose-top">
+    <div class="purpose-top" style="padding: 0 15px;">
       <div class="purpose-line" style="width: 60%"></div>
       <a href="" class="order-button long">Замовити</a>
       <div class="purpose-line" style="width: 30%"></div>
@@ -257,7 +267,7 @@
 
   <div class="characteristics">
     <div class="characteristics-container">
-      <img src="images/characteristics.png" alt="">
+      <img src="images/characteristics.png" alt="" class="characteristics-img">
       <div class="characteristics-content">
         <h2 class="characteristics-content-title">
           характеристики
@@ -267,24 +277,173 @@
 
             <div class="characteristics-content-card">
               <h3 class="characteristics-content-card-title">Вага пристрою:</h3>
-              <p class="characteristics-content-card-text">90 г - з антенами;</p>
-              <p class="characteristics-content-card-text">80 г - без антен;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">90 г</span> - з антенами;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">80 г</span> - без антен;</p>
             </div>
             <div class="characteristics-content-card">
               <h3 class="characteristics-content-card-title">Акумулятор:</h3>
-              <p class="characteristics-content-card-text">Li-ion - ємністю 1300mAh;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">Li-ion</span> - ємністю <span style="color: #88FDFF;">1300mAh</span>;</p>
             </div>
             <div class="characteristics-content-card">
               <h3 class="characteristics-content-card-title">екран</h3>
-              <p class="characteristics-content-card-text">90 г - з антенами;</p>
-              <p class="characteristics-content-card-text">80 г - без антен;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">1,28  дюйма</span> - <br>
+                IPS capacitive touch;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">240х240 px</span> - <br>
+                роздільна здатність;
+                </p>
+            </div>
+
+          </div>
+          <div class="characteristics-content-column gap">
+
+            <div class="characteristics-content-card">
+              <h3 class="characteristics-content-card-title">Розміри корпусу:</h3>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">71x24x48 мм</span> - <br>
+                без антен та бокового перемикача;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">80x24x48 мм</span> - <br>
+                без антен та з перемикачем;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">80x24x97 мм</span> - <br>
+                з антенами та перемикачем;</p>
+            </div>
+
+            <div class="characteristics-content-card">
+              <h3 class="characteristics-content-card-title">Живлення:</h3>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">7 год. 30 хв</span> - <br>
+                час автономної роботи;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">1 год. 30 хв</span> - <br>
+                час до повної зарядки (при 5V 1A);</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">працює під час заряджання;</span></p>
+
             </div>
 
           </div>
         </div>
+        <div class="under-content">
+          <div class="characteristics-line"></div>
+          <a href="" class="order-button long">оформити замовлення</a>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="black" style="height: 20px;background: linear-gradient(to bottom, #02061b, #070b1b);"></div>
+
+  <div class="settings">
+    <div class="settings-container">
+      <img src="images/settings.png" alt="" class="settings-img">
+      <div class="settings-container-text">
+        <h3 class="settings-container-text-title">налаштування</h3>
+        <div class="settings-container-text-cards">
+          <div class="settings-container-text-card">Звукові сигнали - on/off</div>
+          <div class="settings-container-text-card">Вібрація - on/off</div>
+          <div class="settings-container-text-card">звук пакету LoRa - on/off</div>
+          <div class="settings-container-text-card">Час блокування екрану</div>
+          <div class="settings-container-text-card">Час вимкнення екрану </div>
+          <div class="settings-container-text-card">Час на частоту</div>
+          <div class="settings-container-text-card">Зміна яскравості дисплею</div>
+          <div class="settings-container-text-card">нічний режим екрану</div>
+          <div class="settings-container-text-card">Поріг зміни детекції RSSI</div>
+          <div class="settings-container-text-card">Поріг пакетів</div>
+          <div class="settings-container-text-card">Оновлення ПЗ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="goods">
+    <div class="goods-container">
+      <div class="goods-card">
+        <img src="images/good-1.png" alt="" class="good-img">
+        <h2 class="goods-card-title">TENETA (2 Антени)</h2>
+        <div class="goods-card-order">
+          <p class="goods-card-order-price">11 500 грн</p>
+          <a href="" class="goods-order">Замовити</a>
+        </div>
+      </div>
+      <div class="goods-card">
+        <img src="images/good-2.png" alt="" class="good-img">
+        <h2 class="goods-card-title">TENETA (3 Антени)</h2>
+        <div class="goods-card-order">
+          <p class="goods-card-order-price">12 500 грн</p>
+          <a href="" class="goods-order">Замовити</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detector-drones">
+    <div class="detector-drones-container">
+      <img src="images/detector-main.png" alt="" class="detector-drones-img">
+      <div class="detector-drones-content" style="z-index: 3;">
+        <h3 class="detector-drones-content-title">Детектор Дронів</h3>
+        <h3 class="detector-drones-content-undertitle">у вашому смартфоні</h3>
+        <div class="detector-drones-flex">
+          <img src="images/detector-icon.png" alt="" class="detector-drones-flex-img">
+          <p class="detector-drones-flex-text">Нова версія вже доступна!
+            Відкрий для себе нові можливості.</p>
+        </div>
+        <a href="app/TenetaF4.apk" download class="detector-drones-button-download">завантажити безкоштовно</a>
+      </div>
+    </div>
+
+    <div class="consultation"> 
+      <h2 class="title">замовити консультацію</h2>
+      <div class="form">
+        <div class="form-card">
+          <p class="form-card-text">Ім’я</p>
+          <input type="text" name="" id="" class="input-text">
+        </div>
+        <div class="form-card">
+          <p class="form-card-text">Телефон</p>
+          <input type="text" name="" id="" class="input-text telephone" value="+380">
+        </div>
+      </div>
+      <button class="order-button long">Замовити</button>
+
+    </div>
+
+    <div class="conacts-top">
+      <div class="teneta-contact">
+        <img src="images/teneta-icon.png" alt="" class="teneta-contact-img">
+        <h2 class="teneta-contact-title">teneta</h2>
+      </div>
+      <p class="conacts-top-text">контакти</p>
+    </div>
+
+    <div class="line-cons"></div>
+
+    <div class="contacts-footer">
+      <div class="contacts-footer-left">
+        <div class="contacts-footer-column">
+          <p class="contacts-footer-text">Договір публічної оферти</p>
+          <p class="contacts-footer-text">Політика конфіденційності</p>
+        </div>
+        <div class="contacts-footer-column">
+          <p class="contacts-footer-text">Умови оплати та доставки</p>
+          <p class="contacts-footer-text">Обмін та повернення</p>
+        </div>
+      </div>
+      <div class="contacts-footer-right">
+        <a href="tel:+380665557876" class="contacts-footer-text-right">+380 66 555 78 76</a>
+        <a href="mailto:email@gmail.com" class="contacts-footer-text-right">email@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p class="footer-text">
+      TENETA ©2024 Всі права захищені
+    </p>
+    <div class="footer-icons">
+      <a href="#">
+        <img src="images/inst.svg" alt="" class="footer-icon">
+      </a>
+      <a href="#">
+        <img src="images/tt.svg" alt="" class="footer-icon">
+      </a>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>

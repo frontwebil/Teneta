@@ -1,0 +1,58 @@
+.settings {
+  background-image: url(/images/settings-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 240px;
+  position: relative;
+}
+
+.settings-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* display: flex; */
+}
+.settings-container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  justify-content: flex-start;
+}
+.settings-container-text-title {
+  color: #fff;
+  font-family: "Days One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.settings-container-text-cards {
+  z-index: 3;
+  max-width: 1055px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.settings-container-text-card {
+  color: #02040b;
+  font-family: Involve;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 28px;
+  border-radius: 30px;
+  background: #88fdff;
+  box-shadow: 4px 4px 10px 0px #000;
+}
+.settings-img {
+  position: absolute;
+  right: 0px;
+  top:100px;
+  max-width: 890px;
+  height: auto;
+}

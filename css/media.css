@@ -1,135 +1,651 @@
 @media only screen and (max-width: 1450px) {
-
-  .detector-content{
-    margin-top: 35px!important;
+  .detector-content {
+    margin-top: 35px !important;
   }
 
-  .title{
-    font-size: 42px!important;
-    max-width: 840px!important;
-    margin: 0 auto!important;
+  .title {
+    font-size: 42px !important;
+    max-width: 840px !important;
+    margin: 0 auto !important;
   }
 
-  .header-logo-title{
+  .header-logo-title {
     font-size: 50px;
   }
-  .header-container{
+  .header-container {
     gap: 10px;
   }
-  .detector-content{
-    justify-content: center!important;
+  .detector-content {
+    justify-content: center !important;
   }
-  .detector-content-right{
-    max-width: 840px!important;
-    width: 100%!important;
+  .detector-content-right {
+    max-width: 840px !important;
+    width: 100% !important;
   }
-  .detector-content-right-gerc{
-    max-width: 840px!important;
-    width: 100%!important;
+  .detector-content-right-gerc {
+    max-width: 840px !important;
+    width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 1400px) {
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    position: absolute;
+    bottom: 3%;
+    right: 6%;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
 
+  .goods-container {
+    max-width: 700px;
+    gap: 200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
-
 
 @media only screen and (max-width: 1300px) {
-
-.purpose-content {
-  padding-top: 680px!important;
-}
-
-
-  .title{
-    font-size: 42px!important;
+  .detector-drones-img {
+    position: absolute;
+    left: -50px;
+    width: 750px;
   }
 
-  .header-logo{
+  .input-text {
+    border-radius: 40px;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+  }
+
+  .form-card-text {
+    padding: 0 20px 10px;
+  }
+
+  .purpose-content {
+    padding-top: 680px !important;
+  }
+
+  .title {
+    font-size: 42px !important;
+  }
+
+  .header-logo {
     gap: 5px;
   }
-  .header-logo-img{
+  .header-logo-img {
     width: 55px;
     height: 55px;
   }
 
-  .header-nav-text{
+  .header-nav-text {
     font-size: 13px;
   }
-  .buy-button{
+  .buy-button {
     font-size: 17px;
+  }
+
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    position: absolute;
+    bottom: 0%;
+    right: 3%;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 1100px) {
+  .video-button-title {
+    font-family: "Days One";
+    max-width: 370px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+
+  .send-video {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 53px;
+  }
+
+  .input-video {
+    width: 100%;
+    font-family: "Days One";
+    border: 1px solid #fff;
+    border-radius: 40px;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 20px 14px;
+  }
+
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+  }
+
+  .settings-img {
+    position: static;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .settings-container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .detector-drones-img {
+    position: absolute;
+    left: -50px;
+    width: 660px;
+    top: 25px;
+  }
+
+  .detector-drones-content-title {
+    padding-bottom: 10px;
+    font-size: 55px;
+  }
+  .detector-drones-content-undertitle {
+    font-size: 47px;
+    padding-bottom: 15px;
+  }
+  .detector-drones-flex-text {
+    font-size: 25px;
+  }
+  .detector-drones-flex-img {
+    width: 75px;
+    height: 75px;
+  }
+  .detector-drones-flex {
+    gap: 18px;
+  }
+
+  .consultation {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 150px 15px 95px;
+    text-align: center;
+  }
+
+  .form {
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .contacts-footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 
   .purpose-container {
-    background-image: url(/images/purpose-mobile.png)!important;
+    background-image: url(/images/purpose-mobile.png) !important;
   }
 
-  .header-container.burger{
+  .header-container.burger {
     display: flex;
   }
-  .header-nav{
+  .header-nav {
     margin-left: 0;
   }
-  .header-nav-text{
+  .header-nav-text {
     font-size: 16px;
   }
-  .header-container{
+  .header-container {
     display: none;
   }
 
-  .about{
-    gap: 50px!important;
+  .about {
+    gap: 50px !important;
+  }
+
+  .detector-drones-content-title {
+    font-size: 47px;
+  }
+  .detector-drones-content-undertitle {
+    font-size: 42px;
+  }
+  .detector-drones-flex-text {
+    font-size: 22px;
+  }
+
+  .detector-drones-flex {
+    margin-bottom: 50px;
   }
 }
 
 @media only screen and (max-width: 900px) {
+
+  .send-video {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 42px;
+}
+
+  .characteristics-content-title {
+    font-size: 45px;
+  }
+
+  .characteristics-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .characteristics-img {
+    position: static;
+    margin-left: -50px;
+  }
+
+  .characteristics-content-column {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .characteristics-content-cards {
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .black {
+    display: none;
+  }
+
+  .settings {
+    background-image: url(/images/settings-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    position: relative;
+  }
+
+  .settings-container-text-cards {
+    z-index: 3;
+    max-width: 1055px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .settings-container-text-card {
+    color: #02040b;
+    font-family: Involve;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 20px 28px;
+    border-radius: 30px;
+    background: #88fdff;
+    box-shadow: 4px 4px 10px 0px #000;
+  }
+
+  .goods-card-order-price {
+    font-size: 26px;
+    padding: 18px 25px;
+  }
+
+  .detector-drones-content {
+    padding-top: 0;
+  }
+
+  .detector-drones-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .detector-drones-img {
+    position: static;
+    width: 100%;
+  }
+
+  .contacts-footer-text {
+    font-size: 16px;
+  }
+
+  .contacts-footer-text-right {
+    font-size: 20px;
+  }
+
+  .contacts-footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
   .purpose-content {
-    padding-top: 580px!important;
+    padding-top: 580px !important;
+  }
+
+  .frequency-img-first {
+    display: none !important;
+  }
+  .frequency-img-second {
+    display: block !important;
+  }
+  .frequency {
+    padding-bottom: 0 !important;
+    margin-top: 50px !important;
+  }
+  .purpose {
+    background-image: url(/images/purpose-bg-mobile.png) !important;
+    background-position: center !important;
+  }
+
+  .purpose-container {
+    background-image: url(/images/purpose-mobile.png) !important;
+    background-position: top !important;
+  }
+
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 18px;
+  }
+
+  .input-video {
+    width: 100%;
+    font-family: "Days One";
+    border: 1px solid #fff;
+    border-radius: 40px;
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px 10px;
+    
+  }
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 18px;
+    position: absolute;
+    bottom: 0%;
+    right: 3%;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 355px;
+}
+}
+
+@media only screen and (max-width: 720px) {
+  .video {
+    display: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   
-.frequency-img-first {
-  display: none!important;
-}
-.frequency-img-second {
-  display: block!important;
-}
-.frequency{
-  padding-bottom: 0!important;
-  margin-top:50px!important;
-
-}
-.purpose{
-  background-image: url(/images/purpose-bg-mobile.png)!important;
-  background-position: center!important;
-}
-
-.purpose-container {
-  background-image: url(/images/purpose-mobile.png)!important;
-  background-position: top!important;
-}
-}
-
-
-@media only screen and (max-width: 520px) {
-
-  .purpose-content{
-    padding-bottom: 20px!important;
-    padding-top: 300px!important;
-    gap: 15px!important;
+  .video-mobile{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 
-  .order-button.long{
-    font-size: 17px;
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 18px;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 355px;
+}
+
+.button-absolute {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 18px;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid #fff;
+  border-radius: 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  max-width: 389px;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 656px) {
+  .settings-container-text-card {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+
+  .goods-card-order-price {
+    font-size: 20px;
+    padding: 18px 25px;
+  }
+
+  .goods-order {
+    font-size: 20px;
+    padding: 15px 37px;
+  }
+
+  .goods-card-title {
+    font-size: 36px;
+  }
+
+  .goods-card {
+    padding: 0 35px 35px;
+  }
+
+  .detector-drones-flex {
+    max-width: 500px;
+  }
+  .detector-drones-content-title {
+    font-size: 35px;
+  }
+
+  .detector-drones-content-undertitle {
+    font-size: 33px;
+  }
+
+  .detector-drones-button-download {
+    font-size: 22px;
+  }
+
+  .conacts-top-text {
+    font-size: 25px;
+  }
+
+  .teneta-contact-title {
+    font-size: 42px;
+    padding-bottom: 5px;
+  }
+
+  .teneta-contact {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .teneta-contact-img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contacts-footer-text-right {
+    border-bottom: 1px solid white;
+  }
+
+  .contacts-footer {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .characteristics-content-title {
+    font-size: 35px;
+  }
+
+  .goods {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .settings-container-text {
+    gap: 35px;
+  }
+
+  .settings-container-text-title {
+    font-size: 32px;
+  }
+
+  .settings-container-text-card {
+    font-size: 12px;
     padding: 10px 15px;
   }
 
-  .header-container{
+  .goods-card {
+    padding: 0px 15px 30px;
+  }
+
+  .goods-order {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+
+  .goods-card-title {
+    font-size: 29px;
+  }
+  .goods-card-order-price {
+    font-size: 16px;
+    padding: 18px 5px;
+  }
+
+  .goods-container {
+    max-width: 700px;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .good-img {
+    margin-top: -100px;
+    width: 280px;
+  }
+
+  .consultation {
+    padding: 100px 15px 95px;
+  }
+
+  .detector-drones-content-title {
+    font-size: 28px;
+  }
+  .detector-drones-content-undertitle {
+    font-size: 27px;
+  }
+  .detector-drones-flex-text {
+    font-size: 18px;
+  }
+
+  .detector-drones-button-download {
+    font-size: 15px;
+  }
+
+  .input-text {
+    border-radius: 40px;
+    border: 1px solid #fff;
+    padding: 12px 16px;
+  }
+
+  .input-text {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 15px 15px 25px;
+  }
+
+  .footer-text {
+    color: #fff;
+    font-family: Involve;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .footer-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .purpose-content {
+    padding-bottom: 20px !important;
+    padding-top: 300px !important;
+    gap: 15px !important;
+  }
+
+  .order-button.long {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .header-container {
     padding: 5px 10px;
   }
 
-  .header-logo-img{
+  .header-logo-img {
     width: 40px;
     height: 40px;
   }
@@ -137,102 +653,236 @@
   .header-logo-title {
     font-size: 36px;
   }
-  
-  .header-nav-text.num{
+
+  .header-nav-text.num {
     font-size: 12px;
   }
-  
 
-  .about{
-    gap: 25px!important;
+  .about {
+    gap: 25px !important;
   }
 
-  .title{
-    font-size: 28px!important;}
+  .title {
+    font-size: 28px !important;
+  }
 
-  .advantages-card-title{
-    font-size: 30px!important;
-    padding-bottom: 20px!important;
+  .advantages-card-title {
+    font-size: 30px !important;
+    padding-bottom: 20px !important;
   }
-  .advantages-cards{
-    margin-top: 30px!important;
+  .advantages-cards {
+    margin-top: 30px !important;
   }
-  .advantages-card{
-    padding: 15px 20px 25px!important;
+  .advantages-card {
+    padding: 15px 20px 25px !important;
   }
 }
 
 @media only screen and (max-width: 440px) {
 
+
   
-  .about{
-    gap: 18px!important;
-    padding: 0!important;
-  }
-  
+  .button-absolute {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 18px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    border: 1px solid #fff;
+    border-radius: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 355px;
+}
 
-  .order-button.button-absolute{
-    font-size: 20px!important;
-    padding: 5px 15px!important;
-  }
-
-  .purpose-content-text{
-    font-size: 17px!important;
-  }
-
-  .detector-content-left{
-    gap: 20px!important;
-  }
-
-  .detector-content-left-text{
-    font-size: 17px!important;
+  .characteristics-img {
+    position: static;
+    margin-left: 0px;
+    width: 295px;
   }
 
-  .detector-content-right-gerc-block{
-    font-size: 13px!important;
-    padding: 10px 20px!important;
-    min-width: 100px!important;
+  .characteristics-content-title {
+    font-size: 30px;
+  }
+
+  .settings-container-text-card {
+    font-size: 10px;
+    padding: 10px 13px;
+  }
+
+  .good-img {
+    margin-top: -70px;
+    width: 230px;
+  }
+
+  .goods-card-title {
+    font-size: 26px;
+  }
+
+  .detector-drones-flex {
+    max-width: 350px;
+  }
+
+  .detector-drones-flex-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .detector-drones-flex-text {
+    font-size: 15px;
+  }
+
+  .detector-drones-content-title {
+    font-size: 22px;
+  }
+
+  .detector-drones-content-undertitle {
+    font-size: 22px;
+  }
+
+  .conacts-top-text {
+    font-size: 20px;
+  }
+
+  .teneta-contact-title {
+    font-size: 35px;
+    padding-bottom: 5px;
+  }
+
+  .teneta-contact {
+    align-items: center;
+    gap: 5px;
+  }
+
+  .teneta-contact-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .about {
+    gap: 18px !important;
+    padding: 0 !important;
+  }
+
+  .order-button.button-absolute {
+    font-size: 20px !important;
+    padding: 5px 15px !important;
+  }
+
+  .purpose-content-text {
+    font-size: 17px !important;
+  }
+
+  .detector-content-left {
+    gap: 20px !important;
+  }
+
+  .detector-content-left-text {
+    font-size: 17px !important;
+  }
+
+  .detector-content-right-gerc-block {
+    font-size: 13px !important;
+    padding: 10px 20px !important;
+    min-width: 100px !important;
   }
 
   .detector-content-right-gerc-text {
-    font-size: 13px!important;
-}
+    font-size: 13px !important;
+  }
 
   .detector-content-right-gerc {
-    margin-top: 25px!important;
-    max-width: 540px!important;
-    gap: 15px!important;
-}
+    margin-top: 25px !important;
+    max-width: 540px !important;
+    gap: 15px !important;
+  }
+  .button-absolute {
+    max-width: 350px;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 375px) {
 
-  .about-card-text{
-    font-size: 15px!important;
+  .button-absolute {
+    max-width: 300px;
+    width: 100%;
   }
 
+  .characteristics-content-title {
+    font-size: 27px;
+  }
 
+  .settings-container-text-card {
+    font-size: 8px;
+    padding: 10px 10px;
+  }
 
-  .header-nav-text.num{
+  .settings-container-text-title {
+    font-size: 29px;
+  }
+
+  .goods-card-title {
+    font-size: 22px;
+  }
+  .goods-order {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+
+  .goods-card-order-price {
+    font-size: 12px;
+    padding: 18px 5px;
+  }
+
+  .detector-drones-content-title {
+    font-size: 18px;
+  }
+
+  .detector-drones-button-download {
+    font-size: 12px;
+  }
+
+  .detector-drones-flex {
+    margin-bottom: 40px;
+  }
+
+  .detector-drones-content-undertitle {
+    font-size: 19px;
+  }
+
+  .conacts-top-text {
+    font-size: 17px;
+  }
+
+  .teneta-contact-title {
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+
+  .about-card-text {
+    font-size: 15px !important;
+  }
+
+  .header-nav-text.num {
     display: none;
   }
 
-  .order-button{
-    font-size: 16px!important;
-    padding: 5px 15px!important;
+  .order-button {
+    font-size: 16px !important;
+    padding: 5px 15px !important;
   }
 
-
-
-  .advantages-card-title{
-    font-size: 25px!important;
+  .advantages-card-title {
+    font-size: 25px !important;
   }
 
-  .advantages-card{
-    padding: 15px 10px 25px!important;
+  .advantages-card {
+    padding: 15px 10px 25px !important;
   }
 
-  .advantages-card-text{
-    font-size: 17px!important;
+  .advantages-card-text {
+    font-size: 17px !important;
   }
-
 }

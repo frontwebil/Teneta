@@ -23,3 +23,25 @@ menuLinks.forEach((link) =>
     menu.classList.remove("active");
   })
 );
+
+
+const inputs = document.getElementsByClassName('telephone');
+
+Array.from(inputs).forEach((el) => {
+
+  el.addEventListener('keydown', (event) => {
+
+    const cursorPosition = el.selectionStart;
+
+    if (cursorPosition < 4 && (event.key === 'Backspace' || event.key === 'Delete')) {
+        event.preventDefault();
+    }
+  });
+
+  el.addEventListener('input', () => {
+    if (!el.value.startsWith('+380')) {
+      el.value = '+380';
+    }
+  });
+
+});

@@ -1,0 +1,243 @@
+.detector-drones {
+  background-image: url(/images/detector-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detector-drones-container {
+  max-width: 1640px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.detector-drones-img {
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+.detector-drones-content {
+  text-align: center;
+  padding-top: 150px;
+}
+.detector-drones-content-title {
+  padding-bottom: 15px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  font-family: "Days One";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.detector-drones-content-undertitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.detector-drones-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.detector-drones-button-download {
+  font-size: 22px;
+}
+
+.detector-drones-flex-img{
+  width: 90px;height: 90px;
+}
+
+.detector-drones-flex-text {
+  text-align: left;
+  color: #fff;
+  font-family: Involve;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 542px;
+}
+.detector-drones-button-download {
+  color: #262626;
+  text-align: center;
+  font-family: "Days One";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background: #beff78;
+  padding: 14px 30px;
+}
+
+.consultation {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 200px 15px 135px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 85px;
+  margin-bottom: 60px;
+}
+
+.form-card {
+  max-width: 510px;
+  width: 100%;
+}
+
+.form-card-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 30px 14px;
+  text-align: left;
+}
+
+.input-text {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  width: 100%;
+  color: #fff;
+  font-family: "Days One";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.conacts-top {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teneta-contact {
+  display: flex;
+  gap: 20px;
+}
+.teneta-contact-title {
+  color: #fff;
+  font-family: Genos;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.conacts-top-text {
+  color: #fff;
+  font-family: "Days One";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.line-cons {
+  width: 100%;
+  background-color: #fff;
+  height: 2px;
+  filter: blur(5px);
+}
+
+.contacts-footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 45px 15px 30px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 15px;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.contacts-footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.contacts-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacts-footer-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contacts-footer-text-right {
+  color: #fff;
+  font-family: Involve;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contacts-footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px 15px 63px;
+}
+.footer-text {
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-icon {
+  width: 50px;
+  height: 50px;
+}
