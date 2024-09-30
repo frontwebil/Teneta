@@ -11,9 +11,15 @@
 @import url(css/settings.css);
 @import url(css/goods.css);
 @import url(css/detector-drones.css);
+@import url(css/popup.css);
 @import url(css/media.css);
 
 html{
+  background-color: #02050F;
+  scroll-behavior: smooth;
+}
+
+body{
   background-color: #02050F;
 }
 
@@ -42,3 +48,13 @@ html{
   text-transform: uppercase;
 }
 
+.swiper.hide{display: none;}
+
+.mySwiper{
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-wrapper{
+  margin-bottom: 50px;
+}

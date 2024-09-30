@@ -9,7 +9,7 @@
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .goods-card {
   display: flex;
@@ -68,4 +68,5 @@ padding: 18px 42px;
 
 .good-img{
   margin-top: -155px;
+  z-index: 2;
 }

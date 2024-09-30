@@ -5,6 +5,11 @@
   margin: 0 auto 60px;
   padding: 0 10px;
 }
+
+#read-more{
+  border-bottom: 2px solid white;
+  display: none;
+}
 .detector-content {
   margin-top: 80px;
   display: flex;

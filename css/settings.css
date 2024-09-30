@@ -52,7 +52,52 @@
 .settings-img {
   position: absolute;
   right: 0px;
-  top:100px;
+  top: 100px;
   max-width: 890px;
   height: auto;
+}
+
+.settings-container-mobile {
+  display: none;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.settings-container-mobile-top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+.settings-container-mobile-top-column {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.settings-container-mobile-top-column-card {
+  border-radius: 15px;
+  padding: 10px 12px;
+  box-shadow: 2px 2px 5px 0 #000;
+  background: #88fdff;
+  font-family: Involve;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #02040b;
+  z-index: 3;
+}
+.settings-container-mobile-top-img {
+  position: absolute;
+  right: -45px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.settings-container-mobile-cards {
+  display: flex;
+  max-width: 305px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }

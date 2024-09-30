@@ -10,10 +10,58 @@
     href="https://fonts.googleapis.com/css2?family=Days+One&family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+      width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+      height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+      display: inline-block;
+      border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+      background: #ffffff;
+      opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: var(--swiper-pagination-bullet-opacity, 1);
+      background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    }
+  </style>
+
   <title>TENETA</title>
 </head>
 
 <body>
+
+  <div class="popup" id="popup">
+    <div class="popup-container">
+      <h2 class="title-pop">Заповніть форму нижче, і наш менеджер
+        зв'яжеться з Вами найближчим часом.</h2>
+      <form method="" class="form" style="margin: 30px 0;">
+        <div class="form-card">
+          <p class="form-card-text">Ім’я</p>
+          <input type="text" name="" id="" class="input-text">
+        </div>
+        <div class="form-card">
+          <p class="form-card-text">Телефон</p>
+          <input type="text" name="" id="" class="input-text telephone" value="+380" maxlength="13">
+        </div>
+        <button class="order-button long" type="">Замовити</button>
+      </form>
+    </div>
+  </div>
+
   <header class="header">
     <div class="header-container">
       <div class="header-logo">
@@ -21,13 +69,13 @@
         <h2 class="header-logo-title">TENETA</h2>
       </div>
       <div class="header-nav">
-        <a href="#" class="header-nav-text">Переваги</a>
-        <a href="#" class="header-nav-text">Про РЕР</a>
-        <a href="#" class="header-nav-text">Призначення</a>
-        <a href="#" class="header-nav-text">Як працює</a>
-        <a href="#" class="header-nav-text">Характеристики</a>
+        <a href="#advantages" class="header-nav-text">Переваги</a>
+        <a href="#about" class="header-nav-text">Про РЕР</a>
+        <a href="#prc" class="header-nav-text">Призначення</a>
+        <a href="#how" class="header-nav-text">Як працює</a>
+        <a href="#characteristics" class="header-nav-text">Характеристики</a>
       </div>
-      <a href="" class="buy-button">Придбати</a>
+      <button class="buy-button pop-up-open">Придбати</button>
     </div>
     <div class="header-container burger" style="justify-content: space-between">
       <div class="header-logo">
@@ -35,7 +83,7 @@
         <h2 class="header-logo-title">TENETA</h2>
       </div>
       <div class="" style="align-items: center; display: flex; gap: 10px">
-        <a href="num" class="header-nav-text num">+380-50-123-4567</a>
+        <a href="tel:+380665557876" class="header-nav-text num">+380-50-123-4567</a>
         <button id="burger-open"><img src="images/List.svg" alt="" /></button>
       </div>
     </div>
@@ -57,30 +105,30 @@
               margin-bottom: 40px;
               margin-top: 40px;
             ">
-          <a href="#" class="header-nav-text">Переваги</a>
-          <a href="#" class="header-nav-text">Про РЕР</a>
-          <a href="#" class="header-nav-text">Призначення</a>
-          <a href="#" class="header-nav-text">Як працює</a>
-          <a href="#" class="header-nav-text">Характеристики</a>
+          <a href="#advantages" class="header-nav-text">Переваги</a>
+          <a href="#about" class="header-nav-text">Про РЕР</a>
+          <a href="#prc" class="header-nav-text">Призначення</a>
+          <a href="#how" class="header-nav-text">Як працює</a>
+          <a href="#characteristics" class="header-nav-text">Характеристики</a>
           <a href="#" class="header-nav-text">&#9743; +380-50-123-4567</a>
         </div>
-        <a href="" class="buy-button" style="margin-bottom: 20px">Придбати</a>
+        <button class="buy-button pop-up-open" style="margin-bottom: 20px">Придбати</button>
       </div>
     </div>
   </header>
 
   <div class="video-content">
-    <video src="video/main-video.mp4" autoplay muted loop class="video"></video>
-    <video src="video/test.mp4" autoplay muted loop class="video-mobile"></video>
-    <div  class="button-absolute">
+    <video src="video/main-video.mp4" autoplay muted loop class="video" playsinline></video>
+    <video src="video/test.mp4" muted autoplay loop playsinline class="video-mobile"></video>
+    <div class="button-absolute">
       <h2 class="video-button-title">Для швидкого замовлення
         залиште свій номер телефону</h2>
-        <form class="input-flex">
-          <input type="text" class="input-video telephone" value="+380">
-          <button>
-            <img src="images/send.png" alt="" class="send-video">
-          </button>
-        </а>
+      <form class="input-flex" method="post">
+        <input type="text" class="input-video telephone" value="+380" maxlength="13">
+        <button type="submit">
+          <img src="images/send.png" alt="" class="send-video">
+        </button>
+      </form>
     </div>
   </div>
 
@@ -106,7 +154,7 @@
     </div>
   </div>
 
-  <div class="advantages">
+  <div class="advantages" id="advantages">
     <h2 class="title">Переваги</h2>
     <div class="advantages-cards">
       <div class="advantages-card">
@@ -161,10 +209,81 @@
       </div>
     </div>
 
-    <a href="" class="order-button long">оформити замовлення</a>
+    <div class="swiper mySwiper hide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">комплектація</h3>
+            <p class="advantages-card-text">
+              Готовий до використання прямо з коробки. У комплекті є все
+              необхідне: сам пристрій, універсальний Type-C кабель та QR-код для
+              швидкого встановлення.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">діапазон</h3>
+            <p class="advantages-card-text">
+              Повний контроль повітряного простору. Наш пристрій забезпечує
+              виявлення дронів на всіх сучасних частотах, від стандартних до
+              спеціалізованих.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">Додаток</h3>
+            <p class="advantages-card-text">
+              Наш додаток забезпечує простий і ефективний спосіб аналізу сигналів
+              різного типу. Підключіть пристрій і отримайте детальний звіт про
+              спектр сигналу за лічені секунди.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">частоти РЕБ</h3>
+            <p class="advantages-card-text">
+              Виявляє не тільки дрони, але й моніторить всі радіочастоти,
+              включаючи сигнали станцій РЕБ.
+              <span style="color: #88fdff">
+                Пам’ятайте: для безпечної роботи дотримуйтесь дистанції 5 метрів.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">Розмір</h3>
+            <p class="advantages-card-text">
+              Легкий і компактний, поміститься навіть у кишеню. Завдяки своїм
+              мініатюрним розмірам (80x24x97 мм) і вазі всього 90 г, пристрій
+              завжди буде під рукою.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="advantages-card">
+            <h3 class="advantages-card-title">комплектація</h3>
+            <p class="advantages-card-text">
+              Готовий до використання прямо з коробки. У комплекті є все
+              необхідне: сам пристрій, універсальний Type-C кабель та QR-код для
+              швидкого встановлення.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+    <button class="order-button long pop-up-open">оформити замовлення</button>
   </div>
 
-  <div class="frequency">
+  <div class="frequency" id="about">
     <h2 class="title" style="margin-bottom: 40px">Про РЕР</h2>
     <img src="images/device1.png" alt="" class="frequency-img-first" />
     <img src="images/device2.png" alt="" class="frequency-img-second" />
@@ -178,14 +297,16 @@
       </h2>
       <div class="detector-content">
         <div class="detector-content-left">
-          <p class="detector-content-left-text">
+          <div class="detector-content-left-text">
             Детектор дронів "TENETA" - це засіб радіоелектронної розвідки,
             який нічого не передає в ефір, і тому невидимий для противника,
             але який весь час слухає та аналізує ефір, знаходить та
             ідентифікує канали зв’язку російських дронів і БПЛА та попереджає
             про їх наближення.
-          </p>
-          <p class="detector-content-left-text">
+            <button id="read-more">Читати далі...</button>
+          </div>
+
+          <div class="detector-content-left-text mobile">
             <span style="font-weight: 600">Має два режими роботи:</span> 1.
             Детектор дронів - в даному режимі, коли спіймав сигнал, пищить,
             вібрує і показує інформацію на екрані. 2. Спектроаналізатор - цей
@@ -193,18 +314,18 @@
             "Teneta", відображаючи всю інформацію вже на екрані смартфону у
             вигляді графіків частот які вловив, але в цьому режимі звукових та
             вібро сигналів не видає.
-          </p>
-          <p class="detector-content-left-text">
+          </div>
+          <div class="detector-content-left-text mobile">
             Пристрій має мультимедійний та функціональний сенсорний екран.
             Працює від вбудованого Li-ion акумулятора. А також має зовнішні
             широкосмугові антени. Та боковий перемикач загального живлення
             пристрою.
-          </p>
-          <p class="detector-content-left-text">
+          </div>
+          <div class="detector-content-left-text mobile">
             Детектор дронів "Тенета" може бути з двома (вияляє FPV дрони) або
             трьома антенами (вияляє FPV дрони, а також DJI Mavic тільки через
             додаток).
-          </p>
+          </div>
         </div>
         <div class="detector-content-right">
           <h3 class="detector-content-right-title">Сканує такі частоти:</h3>
@@ -224,20 +345,21 @@
                 Виявляє "Тенета" з трьома антенами, тільки через застосунок
               </p>
             </div>
-            <a href="" class="order-button long" style="width: 100%">Замовити</a>
+            <button class="order-button long pop-up-open" style="width: 100%">Замовити</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="purpose">
+  <div class="purpose" id="prc">
     <div class="purpose-container">
       <div class="purpose-top">
         <div class="purpose-line" style="width: 60%"></div>
         <h2 class="title">Призначення</h2>
         <div class="purpose-line" style="width: 30%"></div>
       </div>
+      <img src="images/purpose-mobile-mobile.png" alt="" class="mobile-img">
       <div class="purpose-content">
         <p class="purpose-content-text">
           Призначений для завчасного виявлення FPV дронів (на системі зв’язку
@@ -247,25 +369,25 @@
           пристрої. Для тестування дектора дронів "Тенета" разом із РЕБ
           відстань повинна становити не менше 5 метрів!
         </p>
-        <a href="" class="order-button long" style="max-width: 510px">замовити консультацію</a>
+        <button class="order-button long pop-up-open" style="max-width: 510px">замовити консультацію</button>
       </div>
     </div>
   </div>
 
-  <div class="how-work">
+  <div class="how-work" id="how">
     <h3 class="title">Як Працює - відеоогляд</h3>
     <div class="how-work-video-container">
-      <video class="how-work-video" src="video/asdasd.mp4"></video>
+      <video class="how-work-video" src="video/0.mp4" playsinline controls poster="video/0.jpg"></video>
     </div>
 
     <div class="purpose-top" style="padding: 0 15px;">
       <div class="purpose-line" style="width: 60%"></div>
-      <a href="" class="order-button long">Замовити</a>
+      <button class="order-button long pop-up-open">Замовити</button>
       <div class="purpose-line" style="width: 30%"></div>
     </div>
   </div>
 
-  <div class="characteristics">
+  <div class="characteristics" id="characteristics">
     <div class="characteristics-container">
       <img src="images/characteristics.png" alt="" class="characteristics-img">
       <div class="characteristics-content">
@@ -282,15 +404,16 @@
             </div>
             <div class="characteristics-content-card">
               <h3 class="characteristics-content-card-title">Акумулятор:</h3>
-              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">Li-ion</span> - ємністю <span style="color: #88FDFF;">1300mAh</span>;</p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">Li-ion</span> - ємністю <span
+                  style="color: #88FDFF;">1300mAh</span>;</p>
             </div>
             <div class="characteristics-content-card">
               <h3 class="characteristics-content-card-title">екран</h3>
-              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">1,28  дюйма</span> - <br>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">1,28 дюйма</span> - <br>
                 IPS capacitive touch;</p>
               <p class="characteristics-content-card-text"><span style="color: #88FDFF;">240х240 px</span> - <br>
                 роздільна здатність;
-                </p>
+              </p>
             </div>
 
           </div>
@@ -312,7 +435,8 @@
                 час автономної роботи;</p>
               <p class="characteristics-content-card-text"><span style="color: #88FDFF;">1 год. 30 хв</span> - <br>
                 час до повної зарядки (при 5V 1A);</p>
-              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">працює під час заряджання;</span></p>
+              <p class="characteristics-content-card-text"><span style="color: #88FDFF;">працює під час
+                  заряджання;</span></p>
 
             </div>
 
@@ -320,16 +444,60 @@
         </div>
         <div class="under-content">
           <div class="characteristics-line"></div>
-          <a href="" class="order-button long">оформити замовлення</a>
+          <button class="order-button long pop-up-open">оформити замовлення</button>
         </div>
       </div>
+    </div>
+    <div class="characteristics-container-mobile">
+      <h2 class="characteristics-content-title">характеристики</h2>
+      <div class="characteristics-container-mobile-top">
+        <img src="images/char-mobile.png" alt="" class="char-mobile-img">
+        <div class="characteristics-container-mobile-top-column">
+          <div class="characteristics-container-mobile-top-column-card">
+            <h4 class="characteristics-container-mobile-top-column-card-title">Вага пристрою:</h4>
+            <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">90 г</span> - з антенами;</p>
+            <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">80 г</span> - без антен;</p>
+          </div>
+          <div class="characteristics-container-mobile-top-column-card">
+            <h4 class="characteristics-container-mobile-top-column-card-title">Акумулятор:</h4>
+            <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">Li-ion</span> - ємністю 1300mAh;</p>
+          </div>
+        </div>
+      </div>
+      <div class="characteristics-container-mobile-cards">
+        <div class="characteristics-container-mobile-card">
+          <h4 class="characteristics-container-mobile-top-column-card-title">Екран:</h4>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">1,28 дюйма</span> - IPS capacitive touch;</p>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">240х240 px</span> - роздільна здатність;</p>
+        </div>
+        <div class="characteristics-container-mobile-card">
+          <h4 class="characteristics-container-mobile-top-column-card-title">Розміри корпусу:</h4>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">71x24x48 мм</span> - <br>
+            без антен та бокового перемикача;</p>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">80x24x48 мм</span> - <br>
+            без антен та з перемикачем;</p>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">80x24x97</span> мм - <br>
+            з антенами та перемикачем;</p>
+        </div>
+        <div class="characteristics-container-mobile-card">
+          <h4 class="characteristics-container-mobile-top-column-card-title">Живлення:</h4>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">7 год. 30 хв</span> -
+            час автономної роботи;</p>
+          <p class="characteristics-container-mobile-top-column-card-text"><span style="color: #88fdff;">1 год. 30 хв</span> -
+            час до повної зарядки (при 5V 1A);</p>
+          <p class="characteristics-container-mobile-top-column-card-text" style="color: #88FDFF;">працює під час заряджання;</p>
+
+        </div>
+      </div>
+      <button class="order-button long pop-up-open" style="max-width: 450px;display: flex;margin: 0 auto;">оформити замовлення</button>
+
     </div>
   </div>
 
   <div class="black" style="height: 20px;background: linear-gradient(to bottom, #02061b, #070b1b);"></div>
 
   <div class="settings">
-    <div class="settings-container">
+    <div class="settings-container" >
       <img src="images/settings.png" alt="" class="settings-img">
       <div class="settings-container-text">
         <h3 class="settings-container-text-title">налаштування</h3>
@@ -348,6 +516,27 @@
         </div>
       </div>
     </div>
+    <div class="settings-container-mobile">
+      <h3 class="settings-container-text-title" style="text-align: center;">налаштування</h3>
+      <div class="settings-container-mobile-top">
+        <div class="settings-container-mobile-top-column">
+          <p class="settings-container-mobile-top-column-card">Звукові сигнали - on/off</p>
+          <p class="settings-container-mobile-top-column-card">звук пакету LoRa - on/off</p>
+          <p class="settings-container-mobile-top-column-card">Вібрація - on/off</p>
+        </div>
+        <img src="images/settings-mobile.png" alt="" class="settings-container-mobile-top-img">
+      </div>
+      <div class="settings-container-mobile-cards">
+        <div class="settings-container-mobile-top-column-card">Час блокування екрану</div>
+        <div class="settings-container-mobile-top-column-card">Час на частоту</div>
+        <div class="settings-container-mobile-top-column-card">Час вимкнення екрану </div>
+        <div class="settings-container-mobile-top-column-card">Оновлення ПЗ</div>
+        <div class="settings-container-mobile-top-column-card">Зміна яскравості дисплею</div>
+        <div class="settings-container-mobile-top-column-card">Поріг пакетів</div>
+        <div class="settings-container-mobile-top-column-card">нічний режим екрану</div>
+        <div class="settings-container-mobile-top-column-card">Поріг зміни детекції RSSI</div>
+      </div>
+    </div>
   </div>
 
   <div class="goods">
@@ -357,7 +546,7 @@
         <h2 class="goods-card-title">TENETA (2 Антени)</h2>
         <div class="goods-card-order">
           <p class="goods-card-order-price">11 500 грн</p>
-          <a href="" class="goods-order">Замовити</a>
+          <button class="goods-order pop-up-open">Замовити</и>
         </div>
       </div>
       <div class="goods-card">
@@ -365,7 +554,7 @@
         <h2 class="goods-card-title">TENETA (3 Антени)</h2>
         <div class="goods-card-order">
           <p class="goods-card-order-price">12 500 грн</p>
-          <a href="" class="goods-order">Замовити</a>
+          <button class="goods-order pop-up-open">Замовити</и>
         </div>
       </div>
     </div>
@@ -386,19 +575,19 @@
       </div>
     </div>
 
-    <div class="consultation"> 
+    <div class="consultation">
       <h2 class="title">замовити консультацію</h2>
-      <div class="form">
+      <form method="post" class="form">
         <div class="form-card">
           <p class="form-card-text">Ім’я</p>
           <input type="text" name="" id="" class="input-text">
         </div>
         <div class="form-card">
           <p class="form-card-text">Телефон</p>
-          <input type="text" name="" id="" class="input-text telephone" value="+380">
+          <input type="text" name="" id="" class="input-text telephone" value="+380" maxlength="13">
         </div>
-      </div>
-      <button class="order-button long">Замовити</button>
+        <button class="order-button long" type="submit" style="margin-top: 15px;">Замовити</button>
+      </form>
 
     </div>
 
@@ -444,7 +633,18 @@
       </a>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 

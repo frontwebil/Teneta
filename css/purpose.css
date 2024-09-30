@@ -1,4 +1,4 @@
-.purpose{
+.purpose {
   background-image: url(/images/purpose-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
-
 }
 .purpose-top {
   display: flex;
@@ -27,9 +26,8 @@
 .purpose-line {
   margin: 0 auto;
   height: 2px;
-  background: #FFF;
+  background: #fff;
 }
-
 
 .purpose-content {
   display: flex;
@@ -41,10 +39,80 @@
   padding-left: 15px;
 }
 .purpose-content-text {
-  color: #FFF;
-font-family: Involve;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #fff;
+  font-family: Involve;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.characteristics-container-mobile {
+  display: none;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.char-mobile-img{
+  position: absolute;
+  left: 0;
+}
+
+.characteristics-container-mobile-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  padding-right: 20px;
+}
+.characteristics-container-mobile-top-column {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 4;
+}
+.characteristics-container-mobile-top-column-card {
+  background: rgba(2, 5, 15, 0.3);
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.characteristics-container-mobile-top-column-card-title {
+  font-family: Involve;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.characteristics-container-mobile-top-column-card-text {
+  font-family: Involve;
+
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.characteristics-container-mobile-card {
+  background: rgba(2, 5, 15, 0.3);
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 35px auto;
+  width: 100%;
+
+}
+.characteristics-container-mobile-card {
+  background: rgba(2, 5, 15, 0.3);
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 20px;
 }
